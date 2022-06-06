@@ -276,16 +276,16 @@ final class Elementor_Addon_Extension {
 	}
 
 	// Custom CSS
-	// public function widget_styles() {
-	// 	wp_register_style( 'elementor-addon-style', plugins_url( 'style.css', __FILE__ ) );
-	// 	wp_enqueue_style('elementor-addon-style');
-	// }	
+	public function widget_styles() {
+		wp_register_style( 'elementor-addon-style', plugins_url( 'style.css', __FILE__ ) );
+		wp_enqueue_style('elementor-addon-style');
+	}	
 
     // Custom JS
-	// public function widget_scripts() {
-	// 	wp_register_script( 'elementor-addon-js', plugins_url( 'main.js', __FILE__ ) );
-	// 	wp_enqueue_script('elementor-addon-js');
-	// }
+	public function widget_scripts() {
+		wp_register_script( 'elementor-addon-js', plugins_url( 'main.js', __FILE__ ) );
+		wp_enqueue_script('elementor-addon-js');
+	}
 
     // Custom Category
     public function elementor_addon_category () {
